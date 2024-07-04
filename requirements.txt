@@ -3,5 +3,4 @@ torch==2.0.1
 torchvision==0.15.2
 timm==0.6.12
 Pillow==9.3.0
-flask-cors==3.1.0
 gunicorn
