@@ -1,5 +1,6 @@
 import io
 import torch
+from flask_cors import CORS
 import torch.nn as nn
 from torchvision import transforms
 from PIL import Image
@@ -30,7 +31,8 @@ transform = transforms.Compose([
 ])
 
 # Initialize Flask app
-app = Flask(__name__, static_folder='static') 
+app = Flask(__name__, static_folder='static')
+CORS(app) 
 # Route to serve the HTML file
 @app.route('/')
 def index():
