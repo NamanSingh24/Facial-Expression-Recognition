@@ -28,7 +28,7 @@ captureButton.addEventListener('click', () => {
         captureButton.style.display = 'none';
         recaptureButton.style.display = 'block';
 
-        fetch('/predict', {
+        fetch('https://facial-expression-recognition.onrender.com/predict', { 
             method: 'POST',
             body: formData
         })
